@@ -1,0 +1,20 @@
+@use "../variables" as var;
+@use "../mixins" as func;
+
+.donate {
+  padding: 70px 78px 0 78px;
+  background-color: var.$blue-light-1;
+  text-align: center;
+  position: relative;
+
+  @include func.header($width: 700px);
+
+  .donate-image {
+      display: inline-block;
+      max-width: 100%;
+  }
+
+  .btn-support {
+      @include func.btnSupport();
+  }
+}

@@ -16,7 +16,7 @@
                 story through media coverage
             </p>
             <hr />
-            <a href="#" class="btn">
+            <a href="#" class="btn-support">
                 <img src="images/document-download.svg" alt="" />
                 View Event Details
             </a>

@@ -13,7 +13,7 @@
                         <p class="count-tree"><span>5,690</span> / 10,000 Pohon</p>
                     </div>
 
-                    <a href="#" class="btn">
+                    <a href="#" class="btn-support">
                         Support Our Mission
                         <img src="images/arrow.svg" alt="arrow" />
                     </a>

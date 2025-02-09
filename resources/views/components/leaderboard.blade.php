@@ -65,11 +65,11 @@ $leader_boards = [
 
                     <p
                         class="
-                    @if ($leader_board['id'] >= 1 && $leader_board['id'] <= 3) number-card-green
+                    @if ($leader_board['id'] >= 1 && $leader_board['id'] <= 3) number-card green
                     @elseif ($leader_board['id'] == 4)
-                        number-card-green-muda
+                        number-card green-light
                     @elseif ($leader_board['id'] >= 5 && $leader_board['id'] <= 6)
-                        number-card-yellow @endif
+                        number-card yellow @endif
                 
                     ">
                         {{ $leader_board['number'] }}</p>

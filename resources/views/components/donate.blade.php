@@ -8,9 +8,9 @@
         Join us in our mission to rejuvenate and protect our shorelines
         by donating to our mangrove planting project.
     </p>
-    <a href="#" class="btn">
+    <a href="#" class="btn-support">
         Support Our Mission
-        <i class='bx bx-chevron-right'></i>
+        <img src="images/arrow.svg" alt="arrow" />
     </a>
 
     <img src="images/donate-image.png" alt="" class="donate-image">

@@ -1,0 +1,51 @@
+@use "../variables" as var;
+@use "../mixins" as func;
+
+.about {
+    @include func.section();
+    text-align: center;
+
+    @include func.header($width: 900px, $color: var.$text-color);
+
+    .about-image {
+        display: flex;
+        gap: 44px;
+        position: relative;
+
+        .image-left,
+        .image-right {
+            h3 {
+                font-size: 22px;
+                font-weight: 600;
+            }
+
+            img {
+                width: 100%;
+                margin-bottom: 24px;
+            }
+
+            width: 50%;
+        }
+
+        .transformation {
+            position: absolute;
+            background-color: white;
+            width: 200px;
+            height: 120px;
+            border-radius: 30px;
+            top: 30%;
+            left: 40%;
+            transform: translateX(40px);
+            box-shadow: 0px 0px 20px 0px var.$text-color;
+
+            p {
+                position: absolute;
+                top: 80px;
+                left: 30px;
+                font-size: 15px;
+                color: var.$green-4;
+                font-weight: 700;
+            }
+        }
+    }
+}

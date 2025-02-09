@@ -1,0 +1,102 @@
+@use "../variables" as var;
+@use "../mixins" as func;
+
+.event-summary {
+  @include func.section();
+  background-color: var.$blue-light-1;
+
+  @include func.header($width: 700px);
+}
+
+.event-details {
+  @include func.flex();
+  gap: 32.18px;
+  background-color: white;
+  padding: 56px 50px;
+  border-radius: 44.24px;
+  margin-bottom: 40px;
+  text-align: left;
+
+  .time,
+  .image-slide {
+      width: 50%;
+  }
+
+  .time {
+      h2 {
+          font-size: 27.15px;
+          font-weight: 600;
+          color: var.$primary-color;
+      }
+      h1 {
+          font-size: 30.16px;
+          line-height: 45.25px;
+          margin-bottom: 10px;
+      }
+
+      p {
+          width: 80%;
+          font-size: 16.09px;
+          line-height: 21.72px;
+          padding-bottom: 24.13px;
+      }
+
+      .btn-support {
+          margin-top: 24.13px;
+          @include func.btnSupport();
+      }
+  }
+
+  .image-slide {
+      position: relative;
+
+      img {
+          width: 100%;
+      }
+
+      .prev-button,
+      .next-button {
+          padding: 5.91px;
+          background-color: var.$primary-color;
+          color: white;
+          border-radius: 11.83px;
+      }
+
+      .prev-button {
+          position: absolute;
+          top: 50%;
+          left: 20px;
+          transform: translateY(-20px);
+      }
+
+      .next-button {
+          position: absolute;
+          top: 50%;
+          right: 20px;
+          transform: translateY(-20px);
+      }
+  }
+}
+
+.step {
+  @include func.flex($justify: space-between);
+  gap: 33px;
+
+  .step-items.active {
+      border-top: 3px solid var.$primary-color;
+  }
+
+  .step-items {
+      padding-top: 20px;
+      border-top: 3px solid var.$border-color;
+
+      .number {
+          line-height: 37.64px;
+          margin-bottom: 6px;
+      }
+
+      .step-details {
+          font-size: 18.82px;
+      }
+  }
+}

@@ -1,0 +1,66 @@
+@use "variables" as var;
+
+@mixin flex($justify: center, $direction: row, $gap: 0) {
+    display: flex;
+    justify-content: $justify;
+    align-items: center;
+    flex-direction: $direction;
+    gap: $gap;
+}
+
+@mixin btn($border: none, $color: var.$primary-color) {
+    padding: 10px 25px;
+    border: $border;
+    font-size: 15px;
+    color: $color;
+    border-radius: 50px;
+    font-weight: 600;
+}
+
+@mixin btnSupport($color: white, $bg: var.$primary-color) {
+    @include btn($border: none);
+    color: $color;
+    background-color: $bg;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+}
+
+@mixin header($width: $width, $color: var.$primary-color) {
+    .title,
+    .desc {
+        text-align: center;
+        max-width: $width;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .title {
+        font-size: 40px;
+        font-weight: 700;
+        margin-bottom: 16px;
+        color: $color;
+    }
+
+    .desc {
+        font-size: 18px;
+        line-height: 27px;
+        margin-bottom: 50px;
+    }
+}
+
+@mixin section() {
+    padding: 70px 78px;
+}
+
+@mixin numberCard() {
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 48px;
+    border-radius: 50px;
+}

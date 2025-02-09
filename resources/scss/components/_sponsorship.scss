@@ -1,0 +1,111 @@
+@use "../variables" as var;
+@use "../mixins" as func;
+
+.sponsorsship {
+    @include func.section();
+
+    @include func.header($width: 700px, $color: var.$blue-dark);
+
+    .subtitle {
+        text-align: center;
+        font-size: 26px;
+        margin-bottom: 32px;
+        margin-top: 50px;
+    }
+
+    hr {
+        border: 1px solid var.$border-color;
+    }
+}
+
+.table-sponsorship {
+    width: 100%;
+    margin-bottom: 50px;
+
+    tr {
+        height: 61.85px;
+        text-align: center;
+    }
+
+    td {
+        padding: 20.76px;
+    }
+
+    td.tier {
+        text-align: left;
+    }
+
+    thead {
+        td {
+            font-weight: 500;
+            background-color: var.$blue-light-3;
+        }
+
+        td:nth-child(1) {
+            border-top-left-radius: 20px;
+        }
+        td:last-child {
+            border-top-right-radius: 20px;
+        }
+    }
+
+    tbody {
+        tr:nth-child(even) {
+            background-color: var.$blue-light-2;
+        }
+
+        .tier {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 16.62px;
+            font-weight: 500;
+            padding-bottom: 0;
+
+            img {
+                display: inline-block;
+            }
+        }
+
+        .btn-support {
+            @include func.btnSupport($bg: var.$blue-dark-1);
+            padding: 6px 18px;
+        }
+
+        i {
+            font-size: 30px;
+            font-weight: 300;
+        }
+
+        tr:last-child {
+            td:nth-child(1) {
+                border-bottom-left-radius: 20px;
+            }
+            td:last-child {
+                border-bottom-right-radius: 20px;
+            }
+        }
+    }
+
+    tfoot {
+        td {
+            background-color: var.$blue-dark-1;
+            color: white;
+            font-weight: 600;
+            padding: 0;
+        }
+
+        tr:last-child {
+            td:nth-child(1) {
+                border-bottom-left-radius: 20px;
+            }
+            td:last-child {
+                border-bottom-right-radius: 20px;
+            }
+        }
+
+        .btn-support {
+            @include func.btnSupport($color: var.$blue-dark-1, $bg: white);
+        }
+    }
+}

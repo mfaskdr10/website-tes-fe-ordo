@@ -1,0 +1,14 @@
+@use "../variables" as var;
+@use "../mixins" as func;
+
+footer {
+    width: 100%;
+    background-color: var.$primary-color;
+    padding: 21.5px 0;
+    color: white;
+    text-align: center;
+
+    p {
+        font-weight: 700;
+    }
+}

@@ -1,0 +1,91 @@
+@use "../variables" as var;
+@use "../mixins" as func;
+
+.leaderboard {
+    flex: 1;
+    padding: 32px 42px;
+
+    &-heading {
+        margin-bottom: 28px;
+        .title {
+            margin-bottom: 16px;
+            font-size: 32px;
+            line-height: 40px;
+        }
+
+        .btn.donation {
+            @include func.btn(
+                $border: 2px solid var.$secondary-color,
+                $color: var.$green-4
+            );
+        }
+        .btn.recent {
+            @include func.btn(
+                $border: 2px solid var.$border-color,
+                $color: var.$gray
+            );
+        }
+    }
+
+    &-donation {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.leader-card {
+    @include func.flex($justify: space-between);
+    padding: 10px 0;
+    border-bottom: 1px solid var.$border-color;
+
+    .card-left {
+        @include func.flex();
+        gap: 20px;
+
+        .number-card {
+            @include func.numberCard;
+        }
+
+        .number-card.green {
+            background-color: var.$primary-color;
+        }
+
+        .number-card.green-light {
+            background-color: var.$secondary-color;
+        }
+
+        .number-card.yellow {
+            background-color: var.$green-5;
+        }
+
+        .card-details {
+            @include func.flex();
+            gap: 10px;
+
+            .achive {
+                font-size: 12px;
+                font-weight: 400;
+            }
+
+            .name {
+                font-size: 20px;
+                font-weight: 700;
+            }
+        }
+    }
+
+    .card-right {
+        @include func.flex();
+        gap: 10px;
+
+        .count {
+            color: var.$primary-color;
+            font-family: "Inter", sans-serif;
+            font-size: 22.5px;
+
+            span {
+                font-size: 12px;
+            }
+        }
+    }
+}

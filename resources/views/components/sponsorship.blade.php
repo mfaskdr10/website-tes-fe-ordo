@@ -110,9 +110,9 @@ $corporate_sponsorships = [
                 <td><?= $sponsorship['benefits'] ?></td>
                 <td><?= $sponsorship['donors'] ?></td>
                 <td class="action">
-                    <a href="#" class="btn">
+                    <a href="#" class="btn-support">
                         Support Our Mission
-                        <i class='bx bx-chevron-right'></i>
+                        <img src="images/arrow.svg" alt="arrow" />
                     </a>
                 </td>
             </tr>
@@ -183,21 +183,21 @@ $corporate_sponsorships = [
             <tr>
                 <td>Make a Donation</td>
                 <td>
-                    <a href="#" class="btn">
+                    <a href="#" class="btn-support">
                         Support Our Mission
-                        <i class='bx bx-chevron-right'></i>
+                        <img src="images/arrow-blue.svg" alt="arrow-blue" />
                     </a>
                 </td>
                 <td>
-                    <a href="#" class="btn">
+                    <a href="#" class="btn-support">
                         Support Our Mission
-                        <i class='bx bx-chevron-right'></i>
+                        <img src="images/arrow-blue.svg" alt="arrow-blue" />
                     </a>
                 </td>
                 <td>
-                    <a href="#" class="btn">
+                    <a href="#" class="btn-support">
                         Support Our Mission
-                        <i class='bx bx-chevron-right'></i>
+                        <img src="images/arrow-blue.svg" alt="arrow-blue" />
                     </a>
                 </td>
             </tr>
