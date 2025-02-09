@@ -12,7 +12,7 @@ $leader_boards = [
         'id' => 2,
         'number' => '02',
         'tier' => 'Mangrove Moven',
-        'tierImage' => 'planet-earth-2',
+        'tierImage' => 'planet-earth-1',
         'name' => 'Dewi Sartika',
         'jumlahPohon' => '330',
     ],
