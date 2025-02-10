@@ -1,4 +1,4 @@
-<nav class="navbar">
+<nav class="navbar" data-aos="fade-down">
     <a href="#" class="navbar-logo">
         <img src="images/logo.svg" alt="logo" />
     </a>

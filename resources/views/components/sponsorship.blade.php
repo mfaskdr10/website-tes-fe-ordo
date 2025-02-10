@@ -78,16 +78,16 @@ $corporate_sponsorships = [
 
 
 <section class="sponsorsship">
-    <h1 class="title">Sponsorship Packages</h1>
-    <p class="desc">
+    <h1 class="title" data-aos="fade-down">Sponsorship Packages</h1>
+    <p class="desc" data-aos="fade-down">
         Our sponsorship package offers branding, promotional opportunities, and
         visibility at our event, ideal for enhancing company presence and
         community engagement.
     </p>
 
-    <h3 class="subtitle">Personal Sponsorship Package</h3>
+    <h3 class="subtitle" data-aos="fade-down">Personal Sponsorship Package</h3>
 
-    <table class="table-sponsorship">
+    <table class="table-sponsorship" data-aos="fade-down">
         <thead>
             <tr>
                 <td class="tier">Membership Tier</td>
@@ -122,9 +122,9 @@ $corporate_sponsorships = [
 
     <hr />
 
-    <h3 class="subtitle">Corporate Sponsorship Package</h3>
+    <h3 class="subtitle" data-aos="fade-down">Corporate Sponsorship Package</h3>
 
-    <table class="table-sponsorship">
+    <table class="table-sponsorship" data-aos="fade-down">
         <thead>
             <tr>
                 <td>Benefits</td>

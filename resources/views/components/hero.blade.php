@@ -1,6 +1,6 @@
 <section class="hero">
     {{-- Hero Content --}}
-    <div class="hero-content">
+    <div class="hero-content" data-aos="fade-right">
         <div class="hero-info">
             <p class="tagline">Green Heaven Project - Mangrove</p>
             <h1 class="title">

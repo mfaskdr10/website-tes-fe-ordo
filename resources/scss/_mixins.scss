@@ -64,3 +64,20 @@
     line-height: 48px;
     border-radius: 50px;
 }
+
+// @mixin slide {
+//     @keyframes slide {
+//         from {
+//             transform: translateX(0);
+//         }
+//         to {
+//             transform: translateX(-100%);
+//         }
+//     }
+// }
+
+@mixin keyframes($name){
+    @keyframes #{$name}{
+        @content;
+    }
+}

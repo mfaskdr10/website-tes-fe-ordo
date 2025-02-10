@@ -51,7 +51,7 @@ $leader_boards = [
 ];
 ?>
 
-<div class="leaderboard">
+<div class="leaderboard" data-aos="fade-left">
     <div class="leaderboard-heading">
         <h1 class="title">Leaderboard</h1>
         <a href="#" class="btn donation">Most Donation</a>
